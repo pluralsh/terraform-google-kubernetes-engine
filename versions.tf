@@ -23,10 +23,6 @@ terraform {
       source  = "hashicorp/google"
       version = ">= 3.39.0, <4.0.0"
     }
-    kubernetes = {
-      source  = "hashicorp/kubernetes"
-      version = "~> 1.10, != 1.11.0"
-    }
   }
   provider_meta "google" {
     module_name = "blueprints/terraform/terraform-google-kubernetes-engine/v14.2.0"
