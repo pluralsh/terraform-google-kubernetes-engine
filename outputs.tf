@@ -82,6 +82,11 @@ output "master_authorized_networks_config" {
   value       = google_container_cluster.primary.master_authorized_networks_config
 }
 
+output "datapath_provider" {
+  description = "The desired datapath provider for this cluster. By default, `DATAPATH_PROVIDER_UNSPECIFIED` enables the IPTables-based kube-proxy implementation. `ADVANCED_DATAPATH` enables Dataplane-V2 feature."
+  value       = google_container_cluster.primary.datapath_provider
+}
+
 output "master_version" {
   description = "Current master kubernetes version"
   value       = local.cluster_master_version
