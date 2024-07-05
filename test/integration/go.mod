@@ -5,9 +5,9 @@ go 1.21
 toolchain go1.21.5
 
 require (
-	github.com/GoogleCloudPlatform/cloud-foundation-toolkit/infra/blueprint-test v0.11.0
-	github.com/gruntwork-io/terratest v0.46.8
-	github.com/stretchr/testify v1.8.4
+	github.com/GoogleCloudPlatform/cloud-foundation-toolkit/infra/blueprint-test v0.16.0
+	github.com/gruntwork-io/terratest v0.46.16
+	github.com/stretchr/testify v1.9.0
 )
 
 require (
